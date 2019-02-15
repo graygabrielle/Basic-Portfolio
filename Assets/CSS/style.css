@@ -63,3 +63,7 @@ footer h6 {
     font-size: .75em;
     padding-top: 30px;
 }
+
+img {
+    width: 50px;
+}
