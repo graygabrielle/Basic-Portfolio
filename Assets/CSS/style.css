@@ -1,5 +1,6 @@
 body {
     background-image: URL("../img/background.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 header {
@@ -23,6 +24,9 @@ header h1 {
    
 }
 
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
 
 header div {
@@ -38,10 +42,13 @@ header div {
 
 ul {
     float: right;
+    padding-top: 25px;
 }
 
 ul li {
     float: left;
+    color: #cccccc;
+    padding: 0 20px;
 }
 
 #profile {
@@ -66,4 +73,15 @@ footer h6 {
 
 img {
     width: 50px;
+}
+
+#border {
+   
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+a {
+    color: #cccccc;
+    text-decoration: none;
 }
