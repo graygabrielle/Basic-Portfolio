@@ -203,13 +203,36 @@ input[type=text], select, textarea {
 }
 
 .card {
-    background-image: url("../img/Profile\ Picture.jpg");
+
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-    height: 175px;
+    height: 170px;
+    width: 170px;
 
 }
+
+.card1 {    
+    background-image: url("https://source.unsplash.com/random/170x170");
+}
+
+.card2 {    
+    background-image: url("https://source.unsplash.com/random/170x171");
+}
+
+.card3 {    
+    background-image: url("https://source.unsplash.com/random/170x172");
+}
+
+.card4 {    
+    background-image: url("https://source.unsplash.com/random/170x173");
+}
+
+.card5 {    
+    background-image: url("https://source.unsplash.com/random/170x174");
+}
+
+
 
 .card h2 {
     color: white;
