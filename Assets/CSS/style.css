@@ -1,8 +1,15 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-image: URL("../img/background.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    position: relative;
 
 }
+
+/* styling for the header on all pages */
 
 header {
     background: white;
@@ -27,9 +34,26 @@ header h1 {
    
 }
 
-
-h1 {
+h1, h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+
+header div {
+
+    margin: 0 25%;
+
+}
+
+/* styling for the central content box on all pages */
+
+.main-box {
+    background: white;
+    border: 1px solid #dddddd;
+    margin: 0 25%;
+    margin-top: 3vh;
+    padding: 0 2vw;
+
 }
 
 .main-box h1 {
@@ -42,23 +66,7 @@ h1 {
 }
 
 
-header div {
-
-    margin: 0 25%;
-
-}
-
-
-
-.main-box {
-    background: white;
-    border: 1px solid #dddddd;
-    margin: 0 25%;
-    margin-top: 3vh;
-    padding: 0 2vw;
-
-
-}
+/* styling for the nav bar on all pages */
 
 ul {
     position: absolute;
@@ -67,7 +75,6 @@ ul {
     margin: 0 25%;
     padding-top: 25px;
 }
-
 
 
 ul li {
@@ -82,26 +89,6 @@ ul li {
 }
 
 
-
-footer {
-    background: #666666;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    height: 50px;
-    border-top: 8px solid #4aaaa5;
-    z-index: 2;
-}
-
-footer h6 {
-    text-align: center;
-    color: white;
-    font-size: .75em;
-    padding-top: 30px;
-}
-
-
-
 #border {
    
     border-left: 1px solid #cccccc;
@@ -113,6 +100,37 @@ a {
     text-decoration: none;
 }
 
+
+
+/* styling for the footer on all pages */
+
+.wrapper {
+    min-height: 86.5%;
+    margin-bottom: -50px; 
+    padding-bottom: 50px;
+}
+
+footer {
+    background: #666666;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 5vh;
+}
+
+footer h6 {
+    text-align: center;
+    color: white;
+    font-size: .75em;
+    padding-top: 30px;
+}
+
+
+
+/* styling for the About Me page */
+
 p {
     color: gray;
     line-height: 200%;
@@ -120,7 +138,7 @@ p {
 }
 
 .bio {
-    padding: 2vh 0;
+    padding: 30px 0;
 }
 
 .bio img {
@@ -130,37 +148,78 @@ p {
 
 }
 
-.portfolio-img {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 
-    background: yellow;
+
+/* styling for the Contact page */
+
+
+.form {
+    padding: 30px 0;
 }
 
-.portfolio-img img {
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
 
-    margin: 1vw 1vw 1vw 0;
-    width: 30%;
- 
+ textarea {
+      height: 30vh;
+  }
+  
+  input[type=submit] {
+      color: white;
+      padding: 12px 20px;
+      background-color: #4aaaa5;
+      border: none;
+      cursor: pointer;
+  }
+
+  label {
+      color: gray;
+  }
+
+  @media only screen and (max-width: 600px) { /* Chagnges the location of the links when below 600px */
+    ul {
+        margin-top: 50px;
+        color: red;
+    }
+  }
+
+
+
+/* styling for the Portfolio page */
+
+.portfolio-img {
+    width: 66%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0;
 }
 
 .card {
-    display: inline-block;
+    background-image: url("../img/Profile\ Picture.jpg");
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    height: 175px;
 
 }
 
-h2 {
-    z-index: 1;
-    font-size: .75em;
-    position: relative;
-    bottom: 5vw;
-    width: 30%;
-    text-align: center;
+.card h2 {
     color: white;
-    background: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    line-height: 300%;
-
+    background-color: #4aaaa5;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    line-height: 200%;
+    font-size: 1em;
+  
 }
+
