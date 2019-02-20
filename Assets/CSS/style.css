@@ -149,8 +149,8 @@ p {
 
 .bio img {
     float: left;
-    width: 10vw;
-    padding-right: 1%;
+    width: 150px;
+    padding-right: 15px;
 
 }
 
@@ -338,6 +338,26 @@ input[type=text], select, textarea {
         width: 100%;
     }
     
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio img {
+        display: block;
+        clear: both;
+        width: 200px;
+        padding: 0;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    
+    }
+
+    .main-box h1 {
+        text-align: center;
+        font-size: 1em;
+    }
+
 }
 
 @media(min-width:1150px){
