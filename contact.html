@@ -12,6 +12,26 @@
 
 <body>
     <div class="wrapper">
+        <div class="nav">
+
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#cccccc" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#cccccc" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#cccccc" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="./index.html">About</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+
         <header>
             <div>
                 <h1>
@@ -48,6 +68,19 @@
     <footer>
         <h6>Copyright &copy;</h6>
     </footer>
+
+    <!-- javascript for side nav -->
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '200px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script>
+
 </body>
 
 </html>

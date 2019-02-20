@@ -39,13 +39,6 @@ h1, h2 {
 }
 
 
-header div {
-
-    margin: 0 25%;
-
-}
-
-
 /* styling for the nav bar on all pages */
 
 ul {
@@ -196,13 +189,6 @@ input[type=text], select, textarea {
       color: gray;
   }
 
-  @media only screen and (max-width: 600px) { /* Chagnges the location of the links when below 600px */
-    ul {
-        margin-top: 50px;
-        color: red;
-    }
-  }
-
 
 
 /* styling for the Portfolio page */
@@ -226,23 +212,23 @@ input[type=text], select, textarea {
 }
 
 .card1 {    
-    background-image: url("https://source.unsplash.com/random/170x170");
+    background-image: url("https://source.unsplash.com/random/170x500");
 }
 
 .card2 {    
-    background-image: url("https://source.unsplash.com/random/170x171");
+    background-image: url("https://source.unsplash.com/random/170x501");
 }
 
 .card3 {    
-    background-image: url("https://source.unsplash.com/random/170x172");
+    background-image: url("https://source.unsplash.com/random/170x502");
 }
 
 .card4 {    
-    background-image: url("https://source.unsplash.com/random/170x173");
+    background-image: url("https://source.unsplash.com/random/170x503");
 }
 
 .card5 {    
-    background-image: url("https://source.unsplash.com/random/170x174");
+    background-image: url("https://source.unsplash.com/random/170x504");
 }
 
 
@@ -259,3 +245,104 @@ input[type=text], select, textarea {
   
 }
 
+/* hamburger menu styling */
+
+.nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 5px;
+
+}
+
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#4aaaa5;
+    opacity:0.75;
+    overflow-x: hidden;
+    padding-top: 75px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding:10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:white;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.side-nav a:hover{
+    color:rgb(157, 193, 202);
+
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 36px;
+    margin-left:50px;
+    color: black;
+}
+
+/* media queries for the nav bar and side nav */
+
+@media(max-width:1150px){
+
+    ul {
+        display:none;
+    }
+
+    header {
+        position: relative;
+        
+    }
+
+    .main-box {
+        margin: 0 18%;
+        margin-top: 3vh;
+        padding: 0 2vw;
+
+    }
+
+    header h1 {
+        white-space: nowrap;
+        width: 60%;
+        margin: 0 18%;
+        text-align: center;
+        font-size: 1em;
+
+    }
+
+    .portfolio-img {
+        width: 60%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+        position: relative;
+    }
+    
+    .card {
+        
+        position: relative;
+        width: 100%;
+    }
+    
+}
+
+@media(min-width:1150px){
+    .open-slide {
+        display: none;
+    }
+
+}
